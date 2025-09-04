@@ -150,7 +150,6 @@ body{
     .nlogo img {
     width: 82px;
     height: auto;
-    margin-bottom: 27px;
     }
 
     .nfunc{
@@ -169,8 +168,8 @@ body{
         text-align: center;
     }
 
-    .Logo {
-        width: 25%;
+    .construction img {
+        width: 50%;
         padding-top: 30px;
     }
 }
