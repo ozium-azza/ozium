@@ -46,7 +46,11 @@ body{
     font-weight: 700;
     font-size: 20px;
     background-color: #981f9e;
-    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 50px;
 }
 
 .nlink:hover {
