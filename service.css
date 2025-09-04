@@ -135,6 +135,10 @@ body{
 }
 
 @media (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+
     .nrow {
     margin: 10px;
     }
