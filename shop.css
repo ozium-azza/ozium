@@ -11,28 +11,5 @@ body{
     padding: 0;
 }
 
-.construction{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 80vh;
-    font-family: "Oswald", sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: #0e0e0e;
-    display: flex;
-    flex-direction: column;
-}
-
-.construction img {
-    width: 10%;
-    padding-top: 50px;
-}
-
 @media (max-width: 768px) {
-    .construction img {
-        width: 50%;
-        padding-top: 30px;
-    }
-}
+} 
