@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
+    document.addEventListener("mousemove", (e) => {
+        const rect = smokeContainer.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        mouseOffsetX = e.clientX - centerX; // distanza mouse dal centro
+    });
+
     function createSmokePuff() {
         const puff = document.createElement('div');
         puff.classList.add('smoke-puff');
@@ -15,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
         let drift;
         
         if (isMobile) {
-            drift = Math.random() * 100 + -100; //smoke drift up for mobile
-        }
+            drift = (mouseOffsetX / 5) + (Math.random() * 30 - 15);
+        } 
         else {
-            drift = -(Math.random() * 300 + 200); //smoke drift between 300px and 200px to the left on desktop
+        drift = (mouseOffsetX / 4) + (Math.random() * 100 - 50);
         }
 
         puff.style.setProperty('--drift', `${drift}px`);
