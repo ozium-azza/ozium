@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
         let drift;
         
         if (isMobile) {
-            drift = (mouseOffsetX / 5) + (Math.random() * 30 - 15);
+            drift = (mouseOffsetX / 2) + (Math.random() * 20 - 10);
         } 
         else {
-        drift = (mouseOffsetX / 4) + (Math.random() * 100 - 50);
+        drift = (mouseOffsetX / 2) + (Math.random() * 50 - 25);
         }
 
         puff.style.setProperty('--drift', `${drift}px`);
