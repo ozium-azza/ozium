@@ -11,7 +11,7 @@ body{
     padding: 0;
 }
 
-/*Nav*/
+/*Navigga*/
 .nav{
     background: transparent;
     position: relative;
@@ -27,6 +27,7 @@ body{
 .nlogo{
     display: block;
     align-items: center;
+    margin-top: -3px;
 }
 
 .nlogo img {
@@ -90,7 +91,7 @@ body{
     padding-top: 50px;
 }
 
-/*Footer*/
+/*Footigga*/
 .frow:after {
   content: "";
   display: table;
@@ -152,12 +153,9 @@ body{
     margin: 10px;
     }
 
-    .nfunc {
-    gap: 10px;
-    }
-
     .nlink {
     border-radius: 20px;
+    margin: 0 -3px;
     }
 
     .nlogo img {
