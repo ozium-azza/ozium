@@ -58,6 +58,19 @@ body{
     color: #fe560d;
 }
 
+.narghile {
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+.nargh {
+    width: 500px;
+    align-self: center;
+    margin-top: -250px;
+    margin-left: 190px;
+}
+
 .construction{
     display: flex;
     justify-content: center;
