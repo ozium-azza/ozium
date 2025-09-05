@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let drift;
         
         if (isMobile) {
-            drift = Math.random() * 30 + 50; //smoke drift up for mobile
+            drift = Math.random() * 100 + -100; //smoke drift up for mobile
         }
         else {
             drift = -(Math.random() * 300 + 200); //smoke drift between 300px and 200px to the left on desktop
