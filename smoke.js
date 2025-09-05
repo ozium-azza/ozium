@@ -10,14 +10,22 @@ document.addEventListener("DOMContentLoaded", function() {
         const puff = document.createElement('div');
         puff.classList.add('smoke-puff');
 
-        // Optional: Add slight random horizontal drift
-        const drift = (Math.random() - 0.5) * 100; // Random value between -50px and 50px
+        
+        const isMobile = window.innerWidth <= 768;
+        let drift;
+        
+        if (isMobile) {
+            drift = Math.random() * 30 + 50; //smoke drift up for mobile
+        }
+        else {
+            drift = -(Math.random() * 300 + 200); //smoke drift between 300px and 200px to the left on desktop
+        }
+
         puff.style.setProperty('--drift', `${drift}px`);
 
-        // Optional: Add slight variation in size
-        // const size = 15 + Math.random() * 15; // Size between 15px and 30px
-        // puff.style.width = `${size}px`;
-        // puff.style.height = `${size}px`;
+        const size = 15 + Math.random() * 15; // Size between 15px and 30px
+        puff.style.width = `${size}px`;
+        puff.style.height = `${size}px`;
 
         smokeContainer.appendChild(puff);
 
@@ -28,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Create smoke puffs at intervals (e.g., every 300ms)
-    setInterval(createSmokePuff, 300);
+    setInterval(createSmokePuff, 200);
 
     // Create an initial puff
      createSmokePuff();

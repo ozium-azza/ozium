@@ -28,7 +28,7 @@
         opacity: 0.4;
     }
     100% {
-        transform: translateX(-50%) translateY(-150px) translateX(var(--drift, 0px)) scale(9);
+        transform: translateX(-50%) translateY(-150px) translateX(var(--drift, 0px)) scale(12);
         opacity: 0;
     }
 }
@@ -37,6 +37,8 @@
 @media (max-width: 768px) {
     #smoke-container {
         height: 100px;
+        margin-left: -90px;
+        margin-bottom: 20px;
     }
 
     .smoke-puff {
@@ -46,14 +48,14 @@
 
     @keyframes rise{
         0% {
-            transform: translateX(-50%) scale(0.4);
+            transform: translateX(-50%) scale(0.7);
             opacity: 0.6;
         }
         50% {
             opacity: 0.3;
         }
         100%{
-            transform: translateX(-50%) translateY(-100px) translateX(var(--drift, 0px)) scale(2.5);
+            transform: translateX(-50%) translateY(-100px) translateX(var(--drift, 0px)) scale(6);
             opacity: 0;
         }
     }

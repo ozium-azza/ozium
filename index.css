@@ -181,6 +181,17 @@ body{
         text-align: center;
     }
 
+    .narghile {
+    margin-top: 50px;
+    }
+
+    .nargh {
+    width: 300px;
+    align-self: center;
+    margin-top: -100px;
+    margin-left: -210px;
+    }
+
     .construction img {
         width: 50%;
         padding-top: 30px;
